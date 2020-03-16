@@ -15,6 +15,9 @@ abstract class WordDatabase : RoomDatabase(){
 
     companion object{
 
+        //singleton prevents multiple instance of database
+        //opening at hte same time
+
         private var INSTANCE : WordDatabase? = null
 
         fun getDatabase(

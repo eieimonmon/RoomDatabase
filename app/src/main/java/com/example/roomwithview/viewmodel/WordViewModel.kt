@@ -22,4 +22,7 @@ class WordViewModel (application: Application): AndroidViewModel(application){
     fun insert(word: WordEntity) = viewModelScope.launch {
         repository.insert(word)
     }
+    fun delete() = viewModelScope.launch {
+      repository.delete()
+    }
 }

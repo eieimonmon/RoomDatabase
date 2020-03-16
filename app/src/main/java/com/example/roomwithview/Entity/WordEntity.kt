@@ -9,6 +9,6 @@ class WordEntity (
 
     @PrimaryKey
     @ColumnInfo(name = "word")
-     val word:String = ""
+     val word:String
 
 )

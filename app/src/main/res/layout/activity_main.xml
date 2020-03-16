@@ -11,6 +11,12 @@
         android:layout_height="wrap_content"
         android:text="Add Word"/>
 
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Word"/>
+
 <androidx.recyclerview.widget.RecyclerView
     android:id="@+id/recyclerView"
     android:layout_width="match_parent"

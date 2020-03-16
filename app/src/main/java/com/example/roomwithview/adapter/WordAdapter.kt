@@ -1,5 +1,6 @@
 package com.example.roomwithview.adapter
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,12 +13,15 @@ class WordAdapter : RecyclerView.Adapter<WordAdapter.WordViewHolder>() {
 
     private var words = emptyList<WordEntity>()
 
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WordViewHolder {
        val view = LayoutInflater.from(parent.context ).inflate(R.layout.item_word, parent,false)
         return WordViewHolder(view)
     }
 
     override fun getItemCount(): Int {
+        Log.d("Word size>>>>>", words.size.toString())
         return words.size
     }
 
@@ -29,12 +33,18 @@ class WordAdapter : RecyclerView.Adapter<WordAdapter.WordViewHolder>() {
     {
         this.words = words
         notifyDataSetChanged()
+
     }
+
+
     inner class WordViewHolder(itemView:View): RecyclerView.ViewHolder(itemView){
+
 
         fun bind(word : WordEntity){
 
             itemView.txtword.text = word.word
         }
     }
+
+
 }

@@ -23,7 +23,7 @@
         android:layout_marginTop="192dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Word"
+        android:hint="Word"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
